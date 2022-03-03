@@ -119,6 +119,20 @@ public function boot()
 
 If this callback returns `false`, the navigation items **will not** be registered and anybody trying to access the route directly will receive a `403` response.
 
+### Navigation
+
+You can customise the navigation group that Tools belongs to using:
+
+```php
+Tools::navigationGroup("Settings");
+```
+
+Update the icon in similar fashion:
+
+```php
+Tools::navigationIcon("heroicon-o-cog");
+```
+
 ## Testing
 
 ```bash
