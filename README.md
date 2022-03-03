@@ -74,6 +74,8 @@ Tools::register(function (Tool $tool): Tool {
             $tag = $input->get('tag');
 
             // Do something cool here...
+            
+            $input->notify('success','Action was successful!'); // Flash a notification to the session.
         });
 });
 ```
